@@ -5,4 +5,4 @@ print('Dad once said, "Wake up"')
 print("hello, "+"world")
 greeting= "Hello, "
 name = input("Please enter your name: ")
-print(greeting + name)
+print(greeting + " "+ name)
