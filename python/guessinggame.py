@@ -17,6 +17,5 @@ while guess != answer and guess!=0:
                 print("Please guess higher")
         else: # guess must be greater than answer, not equal to.
             print ('Please guess lower')
-if guess==0:
-    print("Coward")
+
 print("Game over.")
