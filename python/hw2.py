@@ -129,4 +129,4 @@ def correct_spacing(input_string):
         
     return(output_string)
 
-print(correct_spacing("hello there Dad.;ikhvI YT3we  "))
+print(correct_spacing("hello there Dad."))

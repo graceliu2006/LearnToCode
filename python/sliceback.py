@@ -11,3 +11,5 @@ print(letters[-4:])
 print(letters[-1:])
 print(letters[:1])
 print(letters[0])
+
+print("spam"*60)
