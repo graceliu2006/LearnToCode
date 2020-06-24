@@ -150,6 +150,21 @@ def solutions(a,b,c):
 
 print(solutions(1, 0, 1))
 
+print("Question 5")
+# 5.
+# Write a Python program to read lines from a file and save them to another file with reverse order.
+
+with open("jabberwocky.txt", 'r') as jabber:
+    with open("homework4p5.txt",'w') as reverse:
+        lines = jabber.readlines()
+
+        print(lines[0])
+        for line in lines[::-1]:
+            print(line, end= '', file=reverse)
+
+
+
+
 
 
 

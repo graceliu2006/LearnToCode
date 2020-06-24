@@ -10,7 +10,7 @@ print(fruit)
 
 # ordered_keys = sorted(list(fruit.keys()))
 # for f in ordered_keys:
-#     print(f + " - " + fruit[f])
+    # print(f + " - " + fruit[f])
 
 # for f in sorted(fruit.keys()):
 #     print(f + " - " + fruit[f]) 
