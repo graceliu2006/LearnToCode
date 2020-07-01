@@ -14,4 +14,5 @@ for x in pytz.all_timezones:
 for x in sorted(pytz.country_names):
     print(x + ": " + pytz.country_names[x])
 
-
+for x in sorted(pytz.country_names):
+    print("{}:{}:{}".format(x,pytz.country_names[x]))
