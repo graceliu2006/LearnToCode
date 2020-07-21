@@ -1,0 +1,1 @@
+print("delaid*e".strip('del'))
