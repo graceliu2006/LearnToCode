@@ -1,8 +1,13 @@
-import tkinter as tk
+a_string = "this is\na string split\t\t and tabbed"
+print(a_string)
+raw_string = r"this is\na string split\t\t and tabbed"
+print(raw_string)
 
-root = tk.Tk()
-entry = tk.Entry(root)
+b_string = "this is" + chr(10) + "a string split" + chr(9) + chr(9) + "and tabbed"
+print(b_string)
 
-tk.Label(root, text = "This is text").grid(row = 1)
-tk.Entry(root).grid(row = 2)
-tk.mainloop()
+backslash_string = "this is a backslash \\followed by some text"
+print(backslash_string)
+
+error_string = r"this string ends with \\"
+print(error_string)
