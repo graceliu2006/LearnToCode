@@ -1,27 +1,31 @@
-from oopgameplayer import Player
+from oopgameenemy import Enemy, TimBuchalka, Vampire, VampireKing
 
-tim = Player("Bim")
+tim1 = TimBuchalka("TheOriginalTim")
+print("Tim Buchalka - {}".format(tim1))
 
-print(tim.name)
-print(tim.lives)
-tim.lives -= 1
-print(tim)
 
-tim.lives -= 1
-print(tim)
+tim1.identify()
+tim1.take_damage(3)
+print("Tim Buchalka - {}".format(tim1))
 
-tim.lives -= 1
-print(tim)
 
-tim.lives -= 1
-print(tim)
+vampire1 = Vampire("Vlad")
+# print("Vlad - {}".format(vampire1))
 
-tim.level = 5
-print(tim)
+# vampire1.identify()
+# vampire1.take_damage(3)
+# print("Vlad - {}".format(vampire1))
 
-tim.level = 3
-print(tim)
 
-tim.level = -2
-print(tim)
+print(vampire1)
+
+while vampire1._alive:
+    vampire1.take_damage(1)
+        
+print(vampire1)
+
+vampireking1 = VampireKing("Boris")
+print(vampireking1)
+vampireking1.take_damage(1)
+print(vampireking1)
 
