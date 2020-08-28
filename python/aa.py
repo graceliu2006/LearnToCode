@@ -1,13 +1,36 @@
-a_string = "this is\na string split\t\t and tabbed"
-print(a_string)
-raw_string = r"this is\na string split\t\t and tabbed"
-print(raw_string)
+class Pagination:
+    def __init__(self,input_list,n=10):
+        self.content=input_list
+        self.pagesize=int(n)
+        self.page_no=0
+    
+    def nextpage(self):
+        if self.page_no*self.pagesize<len(self.content):
+            self.page_no+=1
+    
+    def last(self):
+        self.page_no=max(len(self.content)-1,0)//self.pagesize
+            
+    def getVisibleItems(self):
+        return self.content[self.page_no*self.pagesize:self.page_no*self.pagesize+self.pagesize]
+            
+        
 
-b_string = "this is" + chr(10) + "a string split" + chr(9) + chr(9) + "and tabbed"
-print(b_string)
+alphabetList = list("abcdefghijklmnopqrstuvwxyz")
 
-backslash_string = "this is a backslash \\followed by some text"
-print(backslash_string)
+p = Pagination(alphabetList, 4)
 
-error_string = r"this string ends with \\"
-print(error_string)
+print(p.getVisibleItems())
+
+p.nextpage()
+
+print(p.getVisibleItems())
+
+p.last()
+
+print(p.getVisibleItems())
+
+
+my_list=["a","b","c"]
+print(my_list[0:10)
+
